@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+const date = new Date();
 export class Footer extends Component {
   render() {
     return (
@@ -15,7 +15,7 @@ export class Footer extends Component {
             <a href='http://www.instagram.com/_tonycee' target='blank'>
               <i className='icon ion-social-instagram-outline'></i>
             </a>
-            <a href='#'>
+            <a href='https://twitter.com/tonisonblog24'>
               <i class='icon ion-social-twitter'></i>
             </a>
             <a href='https://web.facebook.com/francis.nwobodo.7' target='blank'>
@@ -28,18 +28,10 @@ export class Footer extends Component {
               <i className='icon ion-social-whatsapp'></i>
             </a>
           </div>
-          <ul class='list-inline'>
-            <li class='list-inline-item'>
-              <a href='/'>Home</a>
-            </li>
-            <li class='list-inline-item'>
-              <a href='/portfolio'>Portfolio</a>
-            </li>
-            <li class='list-inline-item'>
-              <a href='/about'>About</a>
-            </li>
-          </ul>
-          <p class='copyright'>Company Name © 2017</p>
+
+          <p class='copyright'>
+            <b>Francosion</b> © {date.getFullYear()}
+          </p>
         </footer>
       </div>
     );
